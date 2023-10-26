@@ -1,4 +1,8 @@
-## Chmod differently when using docker image
+## Resolution
+
+- Following is expected behaviour, since root user should have rights to do anything, file permissions dont consider root-user
+
+## What repo has
 
 Includes a script that does following:
  - Create a directory  
@@ -56,7 +60,7 @@ changed permission to write and deleted
 done
 ```
 
-### To test running with node-image
+### To test running with node-image that has root-user
 
 build the image
 ```sh
